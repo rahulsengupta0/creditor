@@ -60,98 +60,7 @@ const LandingPage = () => {
       <AboutSection />
     <MasterclassBanner />
      <CoursesSection />
-      {/* Gamified Sovereignty Academy Section */}
-      <section
-        style={{
-          padding: '80px 6%',
-          background: 'linear-gradient(to bottom right, #eef5ff, #ffffff)',
-          fontFamily: 'Poppins, sans-serif',
-        }}
-      >
-        <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-          <h2
-            style={{
-              fontSize: '2.5rem',
-              color: '#0056b3',
-              fontWeight: 'bold',
-              marginBottom: '10px',
-            }}
-          >
-            <span style={{ color: 'rgb(35, 111, 161)' }}>
-              The First-Ever Gamified Sovereignty Academy
-            </span>
-          </h2>
-          <p
-            style={{
-              fontSize: '1.1rem',
-              color: '#000',
-              maxWidth: '750px',
-              margin: '0 auto',
-              lineHeight: '1.6',
-            }}
-          >
-            No more boring slideshows — just real simulation games, XP, documents, badges, and fun learning through action!
-          </p>
-        </div>
-
-        {/* Grid Cards */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '30px',
-            marginBottom: '60px',
-          }}
-        >
-          {[...Array(3)].map((_, index) => {
-            const content = [
-              {
-                title: 'Real Simulation Games',
-                desc: 'Experience learning by playing with engaging, real-world legal scenarios.',
-                iconPath: 'M21.94 13.06a5.69 5.69...',
-              },
-              {
-                title: 'Earn XP & Unlock Badges',
-                desc: 'Answer questions to unlock badges, contracts, docs & exclusive templates.',
-                iconPath: 'M19 3H5a2 2 0...',
-              },
-              {
-                title: 'Interactive Experience',
-                desc: 'Engage with sound, effects, leaderboards, and multiplayer challenges.',
-                iconPath: 'M12 3v18c-4.97...',
-              },
-            ][index];
-            return (
-              <div
-                key={index}
-                style={{
-                  background: '#fff',
-                  padding: '25px',
-                  borderRadius: '14px',
-                  boxShadow: '0 6px 18px rgba(0,0,0,0.05)',
-                  transition: 'all 0.3s ease',
-                  textAlign: 'center',
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-5px)';
-                  e.currentTarget.style.boxShadow = '0 12px 24px rgba(0,0,0,0.08)';
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 6px 18px rgba(0,0,0,0.05)';
-                }}
-              >
-                <div style={{ marginBottom: '15px' }}>
-                  <svg width="40" height="40" fill="#0056b3" viewBox="0 0 24 24">
-                    <path d={content.iconPath} />
-                  </svg>
-                </div>
-                <h3 style={{ color: '#0056b3', fontSize: '1.2rem', marginBottom: '10px' }}>{content.title}</h3>
-                <p style={{ color: '#000', fontSize: '0.95rem' }}>{content.desc}</p>
-              </div>
-            );
-          })}
-        </div>
+      
         <GameBanner />
 
         {/* Merged Remedy Section */}
@@ -305,7 +214,7 @@ const LandingPage = () => {
 
         </div>
       </section>
-      </section>
+    
            <StatsSection />
     </>
   );

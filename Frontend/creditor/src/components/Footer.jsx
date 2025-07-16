@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <section style={{ background: '#5DADE2', color: '#fff', padding: '80px 10%', fontFamily: 'Poppins, sans-serif', width: '100%' }}>
+    <section style={{ background: '#5DADE2', color: '#fff', padding: '80px 10%', fontFamily: 'Poppins, sans-serif', maxWidth: '100%' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '40px' }}>
         {/* Column 1: Legal & Policies */}
         <div style={{ flex: 1, minWidth: 250, marginBottom: 40, position: 'relative' }}>
