@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import Navbar from './components/Navbar';
+import LandingPage from './page/LandingPage';
+import Footer from './components/Footer';
 import './App.css';
-import LandingPage from './page/LandingPage'; // Import your LandingPage component
 
 function App() {
-  const [count, setCount] = useState(0); // You can remove this if not needed
-
   return (
-    <div className="app">
-
-      <LandingPage />
-    </div>
+    <>
+      <Navbar />
+      <LandingPage />;
+      <Footer />
+    </>
   );
 }
 
